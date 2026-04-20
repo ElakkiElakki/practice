@@ -10,6 +10,7 @@ public class BaseClass {
     protected static WebDriver driver;
 
     public static WebDriver getDriver2() {
+    public static WebDriver getDriver3() {
         if (driver == null) {
             driver = new ChromeDriver();
             driver.manage().window().maximize();
@@ -19,6 +20,7 @@ public class BaseClass {
     }
 
     public static void quitDriver2() {
+    public static void quitDriver3() {
         if (driver != null) {
             driver.quit();
             driver = null;

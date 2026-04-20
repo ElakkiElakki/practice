@@ -15,4 +15,13 @@ public class Hooks {
 	public void tearDown2() {
 		DriverFactory.quitDriver2(); // ✅ CLOSE SAME DRIVER
 	}
+    @Before
+    public void setup3() {
+        DriverFactory.getDriver3(); // driver init only
+    }
+
+    @After
+    public void tearDown3() {
+        DriverFactory.quitDriver3();
+    }
 }

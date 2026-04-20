@@ -24,4 +24,23 @@ public class ConfigReader {
 	public static String get2(String key) {
 		return prop.getProperty(key);
 	}
+    private static Properties prop;
+
+    static {
+        try {
+            FileInputStream fis = new FileInputStream(
+                System.getProperty("user.dir") + "/src/test/resources/config.properties"
+            );
+
+            prop = new Properties();
+            prop.load(fis);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static String get3(String key) {
+        return prop.getProperty(key);
+    }
 }
