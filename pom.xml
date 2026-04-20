@@ -89,5 +89,11 @@
     <version>5.1.2</version>
     <scope>compile</scope>
 </dependency>
+    	<dependency>
+    		<groupId>com.capgemini.SeleniumFramework</groupId>
+    		<artifactId>SeleniumUIFramework.OrangHRM</artifactId>
+    		<version>0.0.1-SNAPSHOT</version>
+    	</dependency>
+    </dependencies>
   </dependencies>
 </project>

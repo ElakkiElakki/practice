@@ -6,6 +6,15 @@ import utilities.DriverFactory;
 
 public class Hooks {
 
+	@Before
+	public void setUp2() {
+		DriverFactory.getDriver2(); // ✅ ONLY THIS
+	}
+
+	@After
+	public void tearDown2() {
+		DriverFactory.quitDriver2(); // ✅ CLOSE SAME DRIVER
+	}
     @Before
     public void setup3() {
         DriverFactory.getDriver3(); // driver init only
